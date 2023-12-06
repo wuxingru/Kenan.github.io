@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.周边玩偶 p {
+  margin: 40px 0 0 0;
+  color: #000000;
+  font-size: 40px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.商品框 {
+  display: flex;
+  width: 100%;
+  height: 400px;
+  padding: 20px;
+  justify-content: space-around;
+  margin: 5px auto;
+}
+
+.商品 {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 90%;
+  width: 350px;
+  background-color: #e7e7e7;
+  border-radius: 10px;
+}
+
+.照片 {
+  height: 90%;
+  display: flex;
+  justify-content: center;
+}
+
+.照片 img {
+  display: flex;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 10px 10px;
+}
+
+.name {
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.name p {
+  font-size: 25px;
+  font-weight: bold;
+}

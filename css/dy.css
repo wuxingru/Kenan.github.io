@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.边框 {
+  background-color: #f9c784;
+  box-shadow: 0 0 25px 10px #666666;
+  width: 76%;
+  border-radius: 15px;
+  /* height: 980px; */
+  margin: 40px 12% 40px 12%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  height: 90px;
+  width: 100%;
+  padding: 15px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.电影 {
+  height: auto;
+  width: auto;
+  padding: 0 0 0 50px;
+}
+
+.电影 p {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.链接 {
+  height: auto;
+  width: auto;
+  padding: 0 50px 0 0;
+}
+
+.container a {
+  font-size: 35px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+.图片边框 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.图片 {
+  width: 50%;
+  height: 450px;
+  overflow: hidden;
+  display: flex;
+  margin: 20px 20px 0 100px;
+}
+
+.电影 {
+  display: flex;
+  object-fit: cover;
+}
+
+.电影详情 {
+  height: auto;
+  width: 50%;
+  margin: 0 80px 0 20px;
+  display: flex;
+  position: relative;
+}
+
+.电影详情 p {
+  font-size: 20px;
+  color: #e7e7e7;
+}
+
+.播放 {
+  /* padding: 100% 0 0 0; */
+  display: flex;
+  height: auto;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  /* position: fixed; */
+  /* bottom: 100%; */
+}
+
+.播放 a {
+  text-decoration: none;
+}
+#播放电影 {
+  /* right: 50px; */
+  bottom: 300px;
+  width: 120px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  background-color: #485696;
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#播放电影:hover {
+  cursor: pointer;
+  color: #000;
+  background-color: #e7e7e7;
+}
+
+.剧情 {
+  padding: 50px 50px 50px 50px;
+}
+.剧情 p {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  line-height: 150%;
+  text-indent: 3em;
+  /* font-family:'Open Sans',sans-serif; */
+}

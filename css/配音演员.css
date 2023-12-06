@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.配音演员 p {
+  margin: 40px 0 0 0;
+  color: #000000;
+  font-size: 40px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .box-container {
+  width: 100%;
+  height: fit-content;
+  border: solid 2px gray;
+} */
+
+.box {
+  width: 1200px;
+  height: 400px;
+  overflow: hidden;
+  background-color: #485696;
+  border-radius: 15px;
+  font-size: 30px;
+  margin: 20px auto;
+  transition: transform 0.45s ease, opacity 0.5s linear;
+  /*居中*/
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.box:nth-child(even) {
+  transform: translateX(-200%);
+  opacity: 0;
+}
+
+.box:nth-child(odd) {
+  transform: translateX(200%);
+  background-color: #F9C784;
+  opacity: 0;
+}
+
+.box.show-center {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.照片 {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.照片 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.介绍 {
+  width: 70%;
+  height: 100%;
+  padding: 30px 20px;
+}
+
+.介绍 p {
+
+  word-wrap: break-word;
+  word-break: break-all;
+  font-weight: bold;
+  font-size: 25px;
+  letter-spacing: 9px;
+  line-height: 150%;
+  text-indent: 3em;
+}

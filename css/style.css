@@ -1,0 +1,303 @@
+:root {
+  --长廊图宽度: 750px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 顶部照片*/
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 滚动视屏 */
+.图像长廊视口 {
+  margin: 0 0 50px 0;
+  height: 500px;
+  width: 100%;
+  background-color: #485696;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 50px 50px #485696 inset;
+}
+
+.箭头 {
+  width: 65px;
+  height: 65px;
+  border-radius: 100px;
+  position: absolute;
+  top: 50%;
+  translate: 0 -50%;
+  z-index: 1;
+  border: none;
+  background-color: #485696;
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 200ms;
+}
+
+.箭头:hover {
+  cursor: pointer;
+  color: #e7e7e7;
+}
+
+.左箭头 {
+  left: 25px;
+}
+
+.右箭头 {
+  right: 25px;
+}
+
+.图像长廊 {
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: -375px;
+  transition: left 200ms;
+}
+
+.长廊 {
+  height: 100%;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.长廊图容器 {
+  height: 100%;
+  width: 750px;
+  overflow: hidden;
+  filter: blur(10px);
+}
+
+.长廊图容器 a {
+  pointer-events: none;
+}
+
+.长廊图 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 身体内容 */
+.主体 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+
+.主体 > .右 {
+  display: flex;
+  width: 15%;
+  height: 600px;
+}
+
+.主体 > .左 {
+  display: flex;
+  width: 15%;
+  height: 600px;
+}
+
+.主体侧边图 {
+  position: absolute;
+  translate: 0 -50%;
+  width: 150px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.左 {
+  left: 10px;
+  bottom: -400px;
+}
+
+.右 {
+  right: 10px;
+  bottom: -400px;
+}
+
+.身体 {
+  background-color: #485696;
+  position: relative;
+  width: 65%;
+  height: 100%;
+  border-radius: 15px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 25px 10px #666666;
+}
+
+.身体 > * {
+  flex-grow: 1;
+  flex-shrink: 0;
+  height: calc(100% / 3);
+  padding: 15px;
+}
+
+.身体 p {
+  padding: 20px;
+  line-height: 150%;
+  font-size: 1.25rem;
+  color: #e7e7e7;
+}
+
+.作者介绍 {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.作者介绍 > .zzimg {
+  width: 40%;
+}
+
+.作者介绍 > .作者文本 {
+  width: 60%;
+  height: 100%;
+  word-wrap: break-word;
+  word-break: break-all;
+  font-weight: bold;
+  line-height: 150%;
+  font-size: 13px;
+  letter-spacing: 6px;
+  text-indent: 3em;
+}
+
+.剧情简介 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.剧情简介 > .jqimg {
+  width: 40%;
+}
+
+.jqimg > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.剧情简介 > .剧情文本 {
+  width: 60%;
+  height: 100%;
+  word-wrap: break-word;
+  word-break: break-all;
+  font-weight: bold;
+  line-height: 150%;
+  font-size: 13px;
+  letter-spacing: 10px;
+  text-indent: 3em;
+}
+.剧情文本 > p {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.创造背景 {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.创造背景 > .zpimg {
+  width: 40%;
+}
+
+.zpimg > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.创造背景 > .作品文本 {
+  width: 60%;
+  height: 100%;
+  word-wrap: break-word;
+  word-break: break-all;
+  font-weight: bold;
+  line-height: 150%;
+  font-size: 13px;
+  letter-spacing: 6px;
+  text-indent: 3em;
+}
+
+/* 底部照片 */
+.尾部 {
+  width: 100%;
+  height: 500px;
+  margin: 50px 0 0 0;
+  position: relative;
+  background-color: black;
+}
+
+.尾部 > img {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+}
+
+/* 底部注释 */
+.注释 {
+  margin: 0 0 20px 0;
+  width: 100%;
+  height: 200px;
+  z-index: 1000;
+  background: #000000;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+}
+.网站{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 150px;
+  border-radius: 15px;
+}
+.网站 a{
+  color: #b9b4b4;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 5px;
+}
+.网站 p{
+  color: #e7e7e7;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 5px;
+}
+.网站:hover{
+  background-color:rgba(180, 180, 180, 0.5);
+}

@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.角色框 {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 10px;
+}
+
+.角色 {
+  width: 200px;
+  height: 75px;
+  background-image: url(/img/user/btn1.webp);
+  color: #E7E7E7;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.角色 a{
+  color: #E7E7E7;
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.角色:hover {
+  background-image: url(/img/user/btn2.webp);
+}
+
+.行 {
+  width: 90%;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-around;
+  margin: 40px 5%;
+}
+
+.行3 {
+  width: 90%;
+  display: flex;
+  justify-content: left;
+  margin: 0 5%;
+}
+
+.user {
+  width: 280px;
+  height: 280px;
+}
+
+.photo {
+  /*设置边框颜色宽度*/
+  border-style: solid;
+  border-color: #F9C784;
+  border-width: 3px;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(
+    to bottom right,
+    #E7E7E7 35%,
+    #FC7A1E 35%
+  );
+}
+
+.user:hover .photo {
+  border-color: #FC7A1E;
+  background: linear-gradient(
+    to bottom right,
+    #E7E7E7 0%,
+    #485696 0%
+  );
+  border-radius: 125px;
+  transition: 1ms;
+}
+
+.name {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.name p{
+  font-size: 25px;
+  font-weight: bold;
+}

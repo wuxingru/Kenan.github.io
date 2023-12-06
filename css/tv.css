@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+  background-image: url(/img/电影/bg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.TV推荐 p {
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.TV{
+  width: 80%;
+  margin: 10px 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  clear: both;
+}
+
+.TV a{
+  text-decoration: none;
+}
+
+.行 {
+  display: flex;
+  width: 100%;
+  height: 400px;
+  padding: 20px;
+  justify-content: space-around;
+  margin: 5px auto;
+}
+
+.背景 {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 80%;
+  width: 350px;
+  background-color: #E7E7E7;
+  border-radius: 10px;
+}
+
+.背景 h2{
+  display: flex;
+  justify-content: center;
+  color: black;
+}
+
+.更多 a{
+  font-size: 25px;
+  font-weight: bold;
+  display: flex;
+  justify-content: end;
+  padding: 0 150px 30px 0;
+  color:#E7E7E7;
+  text-decoration: none;
+}
