@@ -38,6 +38,12 @@
   background-image: url(/img/user/btn2.webp);
 }
 
+.图片框{
+  display: flex;
+  flex-direction: column;
+  
+}
+
 .行 {
   width: 90%;
   display: flex;
@@ -97,3 +103,32 @@
   font-size: 25px;
   font-weight: bold;
 }
+
+@media screen and (width < 1200px) {
+.图片框{
+  flex-direction: row;
+  transition: 1s;
+}
+.行{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+}
+}
+@media screen and (width < 650px) {
+  .角色 a{
+    font-size: 20px;
+    transition: 1s;
+  }
+  .图片框{
+    flex-direction: column;
+    transition: 1s;
+  }
+  .行{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+  }
+  }
