@@ -20,7 +20,7 @@ body {
   align-items: center;
 }
 
-.TV{
+.TV {
   width: 80%;
   margin: 10px 10%;
   display: flex;
@@ -29,7 +29,7 @@ body {
   clear: both;
 }
 
-.TV a{
+.TV a {
   text-decoration: none;
 }
 
@@ -49,22 +49,30 @@ body {
   justify-content: space-around;
   height: 80%;
   width: 350px;
-  background-color: #E7E7E7;
+  background-color: #e7e7e7;
   border-radius: 10px;
 }
 
-.背景 h2{
+.背景 h2 {
   display: flex;
   justify-content: center;
   color: black;
 }
 
-.更多 a{
+.背景 img{
+  transition: 0.25s;
+}
+
+.背景:hover img {
+  scale: 110%;
+}
+
+.更多 a {
   font-size: 25px;
   font-weight: bold;
   display: flex;
   justify-content: end;
   padding: 0 150px 30px 0;
-  color:#E7E7E7;
+  color: #e7e7e7;
   text-decoration: none;
 }
