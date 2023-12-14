@@ -29,6 +29,7 @@ body {
   height: 400px;
   overflow: hidden;
   background-color: #485696;
+  color: #e7e7e7;
   border-radius: 15px;
   font-size: 30px;
   margin: 20px auto;
@@ -47,6 +48,7 @@ body {
 .box:nth-child(odd) {
   transform: translateX(200%);
   background-color: #F9C784;
+  color: #000000;
   opacity: 0;
 }
 
@@ -84,4 +86,53 @@ body {
   letter-spacing: 9px;
   line-height: 150%;
   text-indent: 3em;
+}
+
+.关于{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  font-weight: bold;
+  background-color: #485696;
+  color: #e7e7e7;
+}
+
+.注释 {
+  margin: 0 0 20px 0;
+  width: 100%;
+  height: 200px;
+  z-index: 1000;
+  background: #485696;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+}
+.网站{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 150px;
+  border-radius: 15px;
+}
+.网站 a{
+  color: #b9b4b4;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 5px;
+  padding: 5px 0 0 0;
+}
+.网站 p{
+  color: #e7e7e7;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 5px;
+}
+.网站:hover{
+  background-color:rgba(180, 180, 180, 0.15);
 }
